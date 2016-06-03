@@ -16,7 +16,12 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 IFS=$'\n\t'
 
-FILENAME="resume"
+if [[ -z "${1-}" ]]; then
+    FILENAME="resume"
+else
+    FILENAME="${1}"
+fi
+
 if [[ -f "${FILENAME}.pdf" ]]; then
     rm "${FILENAME}.pdf"
 fi
