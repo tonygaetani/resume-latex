@@ -2,18 +2,18 @@
 %% \usepackage{titlesec}
 \usepackage{array, xcolor}
 \usepackage[margin=2.54cm]{geometry}
-
-%% \title{\bfseries\Large Tony Gaetani}
-%% \author{tony.gaetani@gmail.com -- https://tonygaetani.com}
-%% \date{}
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
 
 \definecolor{lightgray}{gray}{0.8}
-%% \newcolumntype{L}{>{\raggedleft}p{0.2\textwidth}}
-%% \newcolumntype{R}{p{0.65\textwidth}}
 
 \begin{document}
 \pagenumbering{gobble}
-\maketitle
+\begin{center}
+{\LARGE\bf Tony Gaetani}\\
+\end{center}
+\begin{center}
+tony.gaetani@gmail.com -- https://tonygaetani.com
+\end{center}
 
 \section*{About}
 Seeking employment in Chicago, IL in September 2016.\\
@@ -22,13 +22,13 @@ Strong skills in C++, Java, Python, Clojure, SQL databases and Linux server admi
 Proven ability to solve challenging problems by learning new technologies and working in teams.\\
 \section*{Professional Experience}
 {\bf Back-end Software Engineer} Conceptboard, Stuttgart, Germany\\
-Nov 2014 -- Jun 2016
+Oct 2014 -- Jun 2016
 \begin{itemize}
   \itemsep0em
   \item {\bf Java development}, mainly focusing on designing and implementing microservices.
   \item {\bf Development operations} on Linux and Mac.
   \item Used Puppet and Bash to develop Linux server configurations and automate deployment.
-  \item Developed a standalone version of the Conceptboard SaaS product to be sold as an on-premises solution.\\
+  \item Developed a standalone version of the Conceptboard SaaS product to be sold as an on-premises solution.
 \end{itemize}
 {\bf Senior Software Engineer} Mimio, Cambridge, Massachusetts\\
 Nov 2010 -- Jun 2014
@@ -45,9 +45,11 @@ Nov 2010 -- Jun 2014
 Sep 2006 -- May 2010\\
 
 \section*{Skills}
-C++, Java, Python, Clojure, PostgreSQL, AWS, Git/Subversion, Linux/Unix, Bash, Process supervision/Runit, Configuration Management, Puppet, Packer, SSH, Nginx, HTTP, SSL, OpenSSL, Flask, Dropwizard, Qt, Mongodb, Elasticsearch, Logstash, Kibana, iOS, Android.\\
+C++, Java, Python, Clojure, PostgreSQL, AWS, Git/Subversion, Linux, Bash, Process supervision/Runit, Configuration Management, Puppet, Packer, SSH, Nginx, HTTP, SSL, OpenSSL, Flask, Dropwizard, Qt, Mongodb, Elasticsearch, Logstash, Kibana, iOS, Android.\\
 
+\begin{bottompar}
 \begin{center}
 {\small 2016-06-04}
 \end{center}
+\end{bottompar}
 \end{document}
